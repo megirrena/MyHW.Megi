@@ -1,0 +1,12 @@
+
+<div>
+    <h2><strong>Input</strong></h2>
+    <br>
+    <input type="text" [(ngModel)]="inputValue" placeholder= "Write smth... " >
+    
+    &nbsp;&nbsp;&nbsp;
+
+    <button (click)="resetInput()" [disabled]="isButtonDisabled()" class="btn btn-primary btn">Reset Input</button>
+     <p *ngIf="inputValue">Input Value: {{ inputValue }}</p>
+  </div>
+  
